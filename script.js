@@ -15,7 +15,7 @@
 
 // Data
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'David Bourak',
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
   interestRate: 1.2, // %
   pin: 1111,
@@ -127,7 +127,7 @@ btnLogin.addEventListener('click', function (e) {
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     //si ca rentre la c est que le pin et le username est bon donc on veut afficher un msg et le reste
     //ETAPE 1: changer le message en haut log in to get started en welcome ...
-    labelWelcome.textContent = `Welcome nack , ${
+    labelWelcome.textContent = `Welcome back , ${
       currentAccount.owner.split(' ')[0]
     }`;
     //on a remis dans le css l opacity a 0 et la si c est bon on veut reafficher le contenu
